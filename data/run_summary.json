@@ -1,0 +1,17 @@
+{
+  "raw_transactions": 557,
+  "clean_transactions": 512,
+  "quarantined_transactions": 40,
+  "issues_by_rule": {
+    "R01_DUPLICATE": 5,
+    "R02_ORPHAN_CONTRACT": 5,
+    "R03_SIGN": 2,
+    "R04_CURRENCY": 5,
+    "R05_OUT_OF_PERIOD": 5,
+    "R06_REQUIRED_FIELD": 5,
+    "R07_IGR_MISMATCH": 18
+  },
+  "ceded_premium_usd_total": 229014493.52,
+  "net_retro_result_usd_total": -78489314.2,
+  "igr_periods_not_eliminating": 0
+}
