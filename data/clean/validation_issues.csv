@@ -1,0 +1,46 @@
+issue_id,txn_id,rule_id,rule_description,severity,status
+ISS-00001,T000532,R01_DUPLICATE,Exact duplicate of another record (same txn_id and content),BLOCKING,OPEN
+ISS-00002,T000094,R01_DUPLICATE,Exact duplicate of another record (same txn_id and content),BLOCKING,OPEN
+ISS-00003,T000013,R01_DUPLICATE,Exact duplicate of another record (same txn_id and content),BLOCKING,OPEN
+ISS-00004,T000369,R01_DUPLICATE,Exact duplicate of another record (same txn_id and content),BLOCKING,OPEN
+ISS-00005,T000521,R01_DUPLICATE,Exact duplicate of another record (same txn_id and content),BLOCKING,OPEN
+ISS-00006,T000339,R06_REQUIRED_FIELD,A mandatory field is empty,BLOCKING,OPEN
+ISS-00007,T000291,R06_REQUIRED_FIELD,A mandatory field is empty,BLOCKING,OPEN
+ISS-00008,T000185,R06_REQUIRED_FIELD,A mandatory field is empty,BLOCKING,OPEN
+ISS-00009,T000336,R06_REQUIRED_FIELD,A mandatory field is empty,BLOCKING,OPEN
+ISS-00010,T000100,R06_REQUIRED_FIELD,A mandatory field is empty,BLOCKING,OPEN
+ISS-00011,T000144,R02_ORPHAN_CONTRACT,contract_id not found in the contract master,BLOCKING,OPEN
+ISS-00012,T000095,R02_ORPHAN_CONTRACT,contract_id not found in the contract master,BLOCKING,OPEN
+ISS-00013,T000251,R02_ORPHAN_CONTRACT,contract_id not found in the contract master,BLOCKING,OPEN
+ISS-00014,T000394,R02_ORPHAN_CONTRACT,contract_id not found in the contract master,BLOCKING,OPEN
+ISS-00015,T000189,R02_ORPHAN_CONTRACT,contract_id not found in the contract master,BLOCKING,OPEN
+ISS-00016,T000551,R03_SIGN,Negative amount on a line type that must be zero or positive,BLOCKING,OPEN
+ISS-00017,T000068,R03_SIGN,Negative amount on a line type that must be zero or positive,BLOCKING,OPEN
+ISS-00018,T000248,R04_CURRENCY,Currency unknown or no FX rate for the period,BLOCKING,OPEN
+ISS-00019,T000019,R04_CURRENCY,Currency unknown or no FX rate for the period,BLOCKING,OPEN
+ISS-00020,T000187,R04_CURRENCY,Currency unknown or no FX rate for the period,BLOCKING,OPEN
+ISS-00021,T000028,R04_CURRENCY,Currency unknown or no FX rate for the period,BLOCKING,OPEN
+ISS-00022,T000451,R04_CURRENCY,Currency unknown or no FX rate for the period,BLOCKING,OPEN
+ISS-00023,T000543,R05_OUT_OF_PERIOD,Booking date outside the contract's coverage period,BLOCKING,OPEN
+ISS-00024,T000340,R05_OUT_OF_PERIOD,Booking date outside the contract's coverage period,BLOCKING,OPEN
+ISS-00025,T000420,R05_OUT_OF_PERIOD,Booking date outside the contract's coverage period,BLOCKING,OPEN
+ISS-00026,T000265,R05_OUT_OF_PERIOD,Booking date outside the contract's coverage period,BLOCKING,OPEN
+ISS-00027,T000448,R05_OUT_OF_PERIOD,Booking date outside the contract's coverage period,BLOCKING,OPEN
+ISS-00028,T000544,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00029,T000182,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00030,T000421,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00031,T000552,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00032,T000184,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00033,T000287,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00034,T000386,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00035,T000183,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00036,T000124,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00037,T000286,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00038,T000188,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00039,T000387,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00040,T000096,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00041,T000123,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00042,T000099,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00043,T000290,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00044,T000186,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
+ISS-00045,T000395,R07_IGR_MISMATCH,Intra-group ceded and assumed bookings do not agree,BLOCKING,OPEN
