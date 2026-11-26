@@ -1,0 +1,8 @@
+retrocessionaire_id,contracts_in_force,ceded_limit_usd,counterparty_name,counterparty_type,group_entity_id,country,rating,share_of_external_limit,as_of_period
+EXT05,4,507073000.0,Pacific Shield Re,EXTERNAL,,SG,A,0.2797,2026-Q3
+EXT04,4,489404250.0,Lindqvist Re AB,EXTERNAL,,SE,AA-,0.2699,2026-Q3
+IG-RRZ,4,455161750.0,Rhenus Re Ltd,INTRA_GROUP,RRZ,CH,AA-,,2026-Q3
+EXT06,2,325000000.0,Meridian ILS Fund,EXTERNAL,,KY,NR (collateralised),0.1793,2026-Q3
+EXT03,3,269038750.0,Kestrel Capital Re,EXTERNAL,,BM,A-,0.1484,2026-Q3
+EXT01,2,222550000.0,Aurora Retro Ltd,EXTERNAL,,BM,A+,0.1227,2026-Q3
+IG-RRC,1,50000000.0,Rhenus Corporate Solutions Ltd,INTRA_GROUP,RRC,CH,AA-,,2026-Q3
