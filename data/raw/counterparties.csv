@@ -1,0 +1,12 @@
+counterparty_id,counterparty_name,counterparty_type,group_entity_id,country,rating
+IG-RRZ,Rhenus Re Ltd,INTRA_GROUP,RRZ,CH,AA-
+IG-RRE,Rhenus Re Europe SA,INTRA_GROUP,RRE,LU,AA-
+IG-RRA,Rhenus Re America Inc,INTRA_GROUP,RRA,US,AA-
+IG-RRS,Rhenus Re Asia Pte Ltd,INTRA_GROUP,RRS,SG,AA-
+IG-RRC,Rhenus Corporate Solutions Ltd,INTRA_GROUP,RRC,CH,AA-
+EXT01,Aurora Retro Ltd,EXTERNAL,,BM,A+
+EXT02,Northgate Re,EXTERNAL,,GB,A
+EXT03,Kestrel Capital Re,EXTERNAL,,BM,A-
+EXT04,Lindqvist Re AB,EXTERNAL,,SE,AA-
+EXT05,Pacific Shield Re,EXTERNAL,,SG,A
+EXT06,Meridian ILS Fund,EXTERNAL,,KY,NR (collateralised)
