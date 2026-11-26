@@ -3,8 +3,8 @@
 A small, end-to-end reporting pipeline for intra-group and external retrocession, built on
 synthetic data for a fictional reinsurance group (Rhenus Re Group). It takes raw contract and
 transaction data, cleans and validates it in Python, builds a reconciled reporting dataset,
-calculates premium, claims, commission, result and exposure indicators, and publishes the
-results as business objects in a Palantir Foundry Ontology.
+calculates premium, claims, commission, result and exposure indicators, and models the
+results as business objects for a Palantir Foundry Ontology.
 
 All data is synthetic. No company, contract or counterparty in this repository exists.
 
