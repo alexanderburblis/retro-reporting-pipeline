@@ -1,0 +1,64 @@
+# Ontology design for the retrocession reporting pipeline.
+# Configure these in Ontology Manager; each object type is backed by a dataset
+# written by foundry/transforms-python (folder: <project>/ontology).
+
+object_types:
+  - api_name: LegalEntity
+    backing_dataset: ontology/legal_entities
+    primary_key: entity_id
+    title_property: entity_name
+    properties: [entity_id, entity_name, country, functional_currency]
+
+  - api_name: Retrocessionaire
+    backing_dataset: ontology/retrocessionaires
+    primary_key: counterparty_id
+    title_property: counterparty_name
+    properties: [counterparty_id, counterparty_name, counterparty_type, group_entity_id, country, rating]
+
+  - api_name: RetroContract
+    backing_dataset: ontology/retro_contracts
+    primary_key: contract_id
+    title_property: contract_id
+    properties: [contract_id, ceding_entity_id, retrocessionaire_id, contract_type, line_of_business,
+                 inception_date, expiry_date, currency, cession_rate, limit_amount, attachment_amount,
+                 commission_rate]
+
+  - api_name: QuarterlyContractResult
+    backing_dataset: ontology/quarterly_contract_results
+    primary_key: result_id            # contract_id|period
+    title_property: result_id
+    properties: [result_id, contract_id, period, ceding_entity_id, retrocessionaire_id, counterparty_type,
+                 line_of_business, ceded_premium_usd, claims_paid_usd, reserve_change_usd,
+                 ceded_claims_incurred_usd, retro_commission_usd, net_retro_result_usd, retro_loss_ratio]
+
+  - api_name: CounterpartyExposure
+    backing_dataset: ontology/counterparty_exposure
+    primary_key: retrocessionaire_id
+    title_property: counterparty_name
+    properties: [retrocessionaire_id, counterparty_name, rating, contracts_in_force, ceded_limit_usd,
+                 share_of_external_limit, as_of_period]
+
+  - api_name: ValidationIssue
+    backing_dataset: ontology/validation_issues
+    primary_key: issue_id
+    title_property: rule_id
+    properties: [issue_id, txn_id, rule_id, rule_description, severity, status, contract_id, entity_id,
+                 period, resolution_comment]
+
+link_types:          # many-to-one, foreign key on the first object
+  - {name: contract_ceding_entity,    from: RetroContract,           fk: ceding_entity_id,    to: LegalEntity}
+  - {name: contract_retrocessionaire, from: RetroContract,           fk: retrocessionaire_id, to: Retrocessionaire}
+  - {name: result_contract,           from: QuarterlyContractResult, fk: contract_id,         to: RetroContract}
+  - {name: issue_contract,            from: ValidationIssue,         fk: contract_id,         to: RetroContract}
+  - {name: exposure_retrocessionaire, from: CounterpartyExposure,    fk: retrocessionaire_id, to: Retrocessionaire}
+
+action_types:
+  - api_name: resolve-validation-issue
+    object_type: ValidationIssue
+    parameters:
+      - {name: status, type: string, allowed: [OPEN, RESOLVED, ACCEPTED_AS_IS]}
+      - {name: resolution_comment, type: string, required: true}
+    rule: modify object (status, resolution_comment)
+    purpose: >
+      Lets the reporting team document how each quarantined record was handled
+      before the quarterly close, so the audit trail sits next to the data.
